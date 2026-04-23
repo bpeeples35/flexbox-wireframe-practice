@@ -1,22 +1,21 @@
+@import url('reset.css');
 
+/* Your CSS Here */
 
-.container {
+.page { 
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px;
 }
 
 .header,
 .hero,
 .footer {
-  background: lightgray;
-  padding: 20px;
-  text-align: center;
+  width: 100%;
 }
 
 .cards {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -27,13 +26,3 @@
   text-align: center;
 }
 
-display: flex;              /* turns on flexbox */
-flex-direction: column;    /* vertical */
-flex-direction: row;       /* horizontal */
-
-justify-content: center;   /* horizontal alignment */
-align-items: center;       /* vertical alignment */
-
-gap: 10px;                 /* space between items */
-
-flex: 1;                   /* equal width items */
