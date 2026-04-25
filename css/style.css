@@ -1,0 +1,55 @@
+@import url('reset.css');
+
+/* Your CSS Here */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 10px;
+}
+
+header,
+footer,
+aside,
+article {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Specific sections */
+header {
+  background: #c2185b;
+}
+
+footer {
+  background: #ef6c00;
+}
+
+aside {
+  background: #1565c0;
+}
+
+/* Articles wrapper */
+.main {
+  background: #2e7d32;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Individual articles */
+article {
+  background: #e91e63;
+  margin: 10px 0;
+}
