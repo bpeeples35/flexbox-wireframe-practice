@@ -1,55 +1,74 @@
-@import url('reset.css');
-
-/* Your CSS Here */
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #ccc;
-  display: flex;
-  justify-content: center;
+.container, .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
-  width: 90%;
-  max-width: 600px;
-  padding: 10px;
+.container div {
+    color: whitesmoke;
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 15px;;
 }
 
-header,
-footer,
-aside,
-article {
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #9F2063;
 }
 
-/* Specific sections */
-header {
-  background: #c2185b;
-}
-
-footer {
-  background: #ef6c00;
-}
-
-aside {
-  background: #1565c0;
-}
-
-/* Articles wrapper */
 .main {
-  background: #2e7d32;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
-/* Individual articles */
-article {
-  background: #e91e63;
-  margin: 10px 0;
+.main div {
+    width: 100%;
+}
+
+.content {
+    background-color: #24BB7C;
+}
+
+.content span {
+    width: 95%;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.article {
+    background-color: #E4195B;
+}
+
+.aside {
+    background-color: #116395;
+}
+
+.footer {
+    background-color: #F9A800;
+}
+
+/* Responsive Design */
+@media (min-width: 900px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .aside {
+        order: -1;
+        flex: 1;
+    }
+
+    .content {
+        order: 0;
+        flex: 3;
+    }
+
 }
