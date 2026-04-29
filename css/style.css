@@ -1,74 +1,72 @@
-.container, .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container div {
-    color: whitesmoke;
-    width: 80%;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 15px;;
+body {
+  background: #ccc;
+  font-family: Arial, sans-serif;
 }
 
-.header {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #9F2063;
+/* Wrapper */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
+/* Header & Footer */
+header {
+  background: #a61c5b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+footer {
+  background: #e06a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+/* Main layout */
 .main {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.main div {
-    width: 100%;
+/* Aside */
+aside {
+  background: #1f6a8a;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-.content {
-    background-color: #24BB7C;
+/* Articles container */
+.articles {
+  background: #2fb36f;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.content span {
-    width: 95%;
-    border-radius: 15px;
-    margin: 10px 0;
-    padding: 10px 0;
+/* Individual article */
+article {
+  background: #e91e63;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-.article {
-    background-color: #E4195B;
-}
-
-.aside {
-    background-color: #116395;
-}
-
-.footer {
-    background-color: #F9A800;
-}
-
-/* Responsive Design */
-@media (min-width: 900px) {
-    .main {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .aside {
-        order: -1;
-        flex: 1;
-    }
-
-    .content {
-        order: 0;
-        flex: 3;
-    }
-
-}
