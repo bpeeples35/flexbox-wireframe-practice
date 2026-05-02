@@ -1,4 +1,4 @@
-
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,7 +39,7 @@ footer {
 /* Main layout */
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* desktop layout */
   gap: 10px;
 }
 
@@ -49,6 +49,7 @@ aside {
   color: white;
   padding: 20px;
   border-radius: 6px;
+  width: 25%;
 }
 
 /* Articles container */
@@ -59,6 +60,7 @@ aside {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 75%;
 }
 
 /* Individual article */
@@ -70,3 +72,14 @@ article {
   border-radius: 6px;
 }
 
+/* MEDIA QUERY (always at the bottom) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  aside,
+  .articles {
+    width: 100%;
+  }
+}
